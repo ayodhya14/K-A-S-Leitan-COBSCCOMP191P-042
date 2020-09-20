@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57082842D002C1A3C22BDF4C /* Pods_KASLeitan_COBSCCOMP191P_042.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E2F0CCFD529F92AC2E93B5 /* Pods_KASLeitan_COBSCCOMP191P_042.framework */; };
+		A03924092514979200876273 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03924082514979200876273 /* HomeViewController.swift */; };
+		A039240B2514980800876273 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039240A2514980800876273 /* LoginViewController.swift */; };
+		A039240D2514985E00876273 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039240C2514985E00876273 /* RegisterViewController.swift */; };
+		A039240F25149A2F00876273 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039240E25149A2F00876273 /* MainTabBarController.swift */; };
+		A039241325149A8E00876273 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241225149A8E00876273 /* SurveyViewController.swift */; };
+		A039241525149ABE00876273 /* SurveyCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241425149ABE00876273 /* SurveyCVCell.swift */; };
+		A039241725149AF400876273 /* SplashOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241625149AF400876273 /* SplashOneViewController.swift */; };
+		A039241925149B2200876273 /* SafeActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241825149B2200876273 /* SafeActionsViewController.swift */; };
+		A039241B25149B5300876273 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241A25149B5300876273 /* ResultViewController.swift */; };
+		A039241D25149B8100876273 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241C25149B8100876273 /* HomePageViewController.swift */; };
+		A039241F25149BB600876273 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241E25149BB600876273 /* SettingsViewController.swift */; };
+		A039242125149BE800876273 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039242025149BE800876273 /* ProfileViewController.swift */; };
+		A039242325149C2600876273 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039242225149C2600876273 /* ContactViewController.swift */; };
+		A0572F9E250FB96300448D17 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0572F9D250FB96200448D17 /* Default-568h@2x.png */; };
+		A0AD26022517AF130025BFA0 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD26012517AF130025BFA0 /* LoginTest.swift */; };
+		A0BF4A5A25168AF600FD083C /* SplashFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5925168AF600FD083C /* SplashFourViewController.swift */; };
+		A0BF4A5C25168C0E00FD083C /* SplashTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5B25168C0E00FD083C /* SplashTwoViewController.swift */; };
+		A0BF4A5E25168D9000FD083C /* CreateNotificVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */; };
+		A0BF4A6125168E0300FD083C /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6025168E0300FD083C /* NotificationsVC.swift */; };
+		A0BF4A6325168E6700FD083C /* FullMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6225168E6700FD083C /* FullMapViewController.swift */; };
+		A0BF4A6525170CDC00FD083C /* LocationInputUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6425170CDC00FD083C /* LocationInputUIView.swift */; };
+		A0BF4A6725170E4500FD083C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6625170E4500FD083C /* Contact.swift */; };
+		A0BF4A6925170E6600FD083C /* ContactAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6825170E6600FD083C /* ContactAPI.swift */; };
+		A0BF4A7125171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A7025171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift */; };
+		A0BF4A7F25171BFE00FD083C /* KASLeitan_COBSCCOMP191P_042UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A7E25171BFE00FD083C /* KASLeitan_COBSCCOMP191P_042UITests.swift */; };
+		A0C28792250EBDF4002342FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C28791250EBDF4002342FB /* AppDelegate.swift */; };
+		A0C2879B250EBDFB002342FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C2879A250EBDFB002342FB /* Assets.xcassets */; };
+		A0C2879E250EBDFB002342FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2879C250EBDFB002342FB /* LaunchScreen.storyboard */; };
+		A0FCE8312513DF3C000962CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8302513DF3C000962CF /* User.swift */; };
+		A0FCE8332513E05A000962CF /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8322513E05A000962CF /* UserAnnotation.swift */; };
+		A0FCE8352513E0A5000962CF /* AuthUIBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8342513E0A5000962CF /* AuthUIBtn.swift */; };
+		A0FCE86F2513E47A000962CF /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE86E2513E47A000962CF /* CreateViewController.swift */; };
+		A0FCE8712513E49E000962CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8702513E49E000962CF /* MainViewController.swift */; };
+		A0FCE8732513E4E8000962CF /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8722513E4E8000962CF /* service.swift */; };
+		A0FCE8772513E57B000962CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8762513E57B000962CF /* Extensions.swift */; };
+		A0FCE8792513E5AE000962CF /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8782513E5AE000962CF /* LocationHandler.swift */; };
+		A0FCE87B251474C5000962CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0FCE87A251474C5000962CF /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0BF4A7325171BE600FD083C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0C28786250EBDF4002342FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0C2878D250EBDF4002342FB;
+			remoteInfo = "KASLeitan-COBSCCOMP191P-042";
+		};
+		A0BF4A8125171BFE00FD083C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0C28786250EBDF4002342FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0C2878D250EBDF4002342FB;
+			remoteInfo = "KASLeitan-COBSCCOMP191P-042";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		253AFDD84C2A0FEBD31F8B14 /* Pods-KASLeitan-COBSCCOMP191P-042.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KASLeitan-COBSCCOMP191P-042.debug.xcconfig"; path = "Target Support Files/Pods-KASLeitan-COBSCCOMP191P-042/Pods-KASLeitan-COBSCCOMP191P-042.debug.xcconfig"; sourceTree = "<group>"; };
+		30E2F0CCFD529F92AC2E93B5 /* Pods_KASLeitan_COBSCCOMP191P_042.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KASLeitan_COBSCCOMP191P_042.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03924082514979200876273 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A039240A2514980800876273 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A039240C2514985E00876273 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A039240E25149A2F00876273 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A039241225149A8E00876273 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		A039241425149ABE00876273 /* SurveyCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCVCell.swift; sourceTree = "<group>"; };
+		A039241625149AF400876273 /* SplashOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashOneViewController.swift; sourceTree = "<group>"; };
+		A039241825149B2200876273 /* SafeActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionsViewController.swift; sourceTree = "<group>"; };
+		A039241A25149B5300876273 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A039241C25149B8100876273 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		A039241E25149BB600876273 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A039242025149BE800876273 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A039242225149C2600876273 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		A0572F9D250FB96200448D17 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A0AD26012517AF130025BFA0 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		A0BF4A5925168AF600FD083C /* SplashFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFourViewController.swift; sourceTree = "<group>"; };
+		A0BF4A5B25168C0E00FD083C /* SplashTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTwoViewController.swift; sourceTree = "<group>"; };
+		A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificVC.swift; sourceTree = "<group>"; };
+		A0BF4A6025168E0300FD083C /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		A0BF4A6225168E6700FD083C /* FullMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMapViewController.swift; sourceTree = "<group>"; };
+		A0BF4A6425170CDC00FD083C /* LocationInputUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputUIView.swift; sourceTree = "<group>"; };
+		A0BF4A6625170E4500FD083C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		A0BF4A6825170E6600FD083C /* ContactAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAPI.swift; sourceTree = "<group>"; };
+		A0BF4A6E25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KASLeitan-COBSCCOMP191P-042Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BF4A7025171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KASLeitan_COBSCCOMP191P_042Tests.swift; sourceTree = "<group>"; };
+		A0BF4A7225171BE600FD083C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0BF4A7C25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KASLeitan-COBSCCOMP191P-042UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BF4A7E25171BFE00FD083C /* KASLeitan_COBSCCOMP191P_042UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KASLeitan_COBSCCOMP191P_042UITests.swift; sourceTree = "<group>"; };
+		A0BF4A8025171BFE00FD083C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C2878E250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KASLeitan-COBSCCOMP191P-042.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C28791250EBDF4002342FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0C2879A250EBDFB002342FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0C2879D250EBDFB002342FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0C2879F250EBDFB002342FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FCE8302513DF3C000962CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A0FCE8322513E05A000962CF /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		A0FCE8342513E0A5000962CF /* AuthUIBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUIBtn.swift; sourceTree = "<group>"; };
+		A0FCE86E2513E47A000962CF /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		A0FCE8702513E49E000962CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A0FCE8722513E4E8000962CF /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
+		A0FCE8762513E57B000962CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A0FCE8782513E5AE000962CF /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		A0FCE87A251474C5000962CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF7EA4F75CF6A5D69C763A86 /* Pods-KASLeitan-COBSCCOMP191P-042.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KASLeitan-COBSCCOMP191P-042.release.xcconfig"; path = "Target Support Files/Pods-KASLeitan-COBSCCOMP191P-042/Pods-KASLeitan-COBSCCOMP191P-042.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0BF4A6B25171BE600FD083C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0BF4A7925171BFE00FD083C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C2878B250EBDF4002342FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57082842D002C1A3C22BDF4C /* Pods_KASLeitan_COBSCCOMP191P_042.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E6B96D9201DAA4046EA466A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253AFDD84C2A0FEBD31F8B14 /* Pods-KASLeitan-COBSCCOMP191P-042.debug.xcconfig */,
+				DF7EA4F75CF6A5D69C763A86 /* Pods-KASLeitan-COBSCCOMP191P-042.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7596158E2CC14CB429949F40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30E2F0CCFD529F92AC2E93B5 /* Pods_KASLeitan_COBSCCOMP191P_042.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0BF4A6F25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF4A7025171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift */,
+				A0BF4A7225171BE600FD083C /* Info.plist */,
+				A0AD26012517AF130025BFA0 /* LoginTest.swift */,
+			);
+			path = "KASLeitan-COBSCCOMP191P-042Tests";
+			sourceTree = "<group>";
+		};
+		A0BF4A7D25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF4A7E25171BFE00FD083C /* KASLeitan_COBSCCOMP191P_042UITests.swift */,
+				A0BF4A8025171BFE00FD083C /* Info.plist */,
+			);
+			path = "KASLeitan-COBSCCOMP191P-042UITests";
+			sourceTree = "<group>";
+		};
+		A0C28785250EBDF4002342FB = {
+			isa = PBXGroup;
+			children = (
+				A0572F9D250FB96200448D17 /* Default-568h@2x.png */,
+				A0C28790250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042 */,
+				A0BF4A6F25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests */,
+				A0BF4A7D25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests */,
+				A0C2878F250EBDF4002342FB /* Products */,
+				4E6B96D9201DAA4046EA466A /* Pods */,
+				7596158E2CC14CB429949F40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0C2878F250EBDF4002342FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2878E250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042.app */,
+				A0BF4A6E25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests.xctest */,
+				A0BF4A7C25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0C28790250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C287A9250EBF64002342FB /* Services */,
+				A0C287A8250EBF31002342FB /* Utils */,
+				A0C287A7250EBF2A002342FB /* Views */,
+				A0C287A6250EBF23002342FB /* Model */,
+				A0C287A5250EBF11002342FB /* Controller */,
+				A0C28791250EBDF4002342FB /* AppDelegate.swift */,
+				A0C2879A250EBDFB002342FB /* Assets.xcassets */,
+				A0C2879C250EBDFB002342FB /* LaunchScreen.storyboard */,
+				A0FCE87A251474C5000962CF /* GoogleService-Info.plist */,
+				A0C2879F250EBDFB002342FB /* Info.plist */,
+			);
+			path = "KASLeitan-COBSCCOMP191P-042";
+			sourceTree = "<group>";
+		};
+		A0C287A5250EBF11002342FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCE8702513E49E000962CF /* MainViewController.swift */,
+				A039240C2514985E00876273 /* RegisterViewController.swift */,
+				A039240A2514980800876273 /* LoginViewController.swift */,
+				A03924082514979200876273 /* HomeViewController.swift */,
+				A0FCE86E2513E47A000962CF /* CreateViewController.swift */,
+				A039240E25149A2F00876273 /* MainTabBarController.swift */,
+				A039241225149A8E00876273 /* SurveyViewController.swift */,
+				A039241425149ABE00876273 /* SurveyCVCell.swift */,
+				A039241A25149B5300876273 /* ResultViewController.swift */,
+				A039241625149AF400876273 /* SplashOneViewController.swift */,
+				A039241825149B2200876273 /* SafeActionsViewController.swift */,
+				A039241C25149B8100876273 /* HomePageViewController.swift */,
+				A039241E25149BB600876273 /* SettingsViewController.swift */,
+				A039242025149BE800876273 /* ProfileViewController.swift */,
+				A039242225149C2600876273 /* ContactViewController.swift */,
+				A0BF4A5925168AF600FD083C /* SplashFourViewController.swift */,
+				A0BF4A5B25168C0E00FD083C /* SplashTwoViewController.swift */,
+				A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */,
+				A0BF4A6025168E0300FD083C /* NotificationsVC.swift */,
+				A0BF4A6225168E6700FD083C /* FullMapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0C287A6250EBF23002342FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCE8302513DF3C000962CF /* User.swift */,
+				A0FCE8322513E05A000962CF /* UserAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0C287A7250EBF2A002342FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCE8342513E0A5000962CF /* AuthUIBtn.swift */,
+				A0BF4A6425170CDC00FD083C /* LocationInputUIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0C287A8250EBF31002342FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCE8762513E57B000962CF /* Extensions.swift */,
+				A0FCE8782513E5AE000962CF /* LocationHandler.swift */,
+				A0BF4A6625170E4500FD083C /* Contact.swift */,
+				A0BF4A6825170E6600FD083C /* ContactAPI.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0C287A9250EBF64002342FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCE8722513E4E8000962CF /* service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0BF4A6D25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0BF4A7725171BE600FD083C /* Build configuration list for PBXNativeTarget "KASLeitan-COBSCCOMP191P-042Tests" */;
+			buildPhases = (
+				A0BF4A6A25171BE600FD083C /* Sources */,
+				A0BF4A6B25171BE600FD083C /* Frameworks */,
+				A0BF4A6C25171BE600FD083C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0BF4A7425171BE600FD083C /* PBXTargetDependency */,
+			);
+			name = "KASLeitan-COBSCCOMP191P-042Tests";
+			productName = "KASLeitan-COBSCCOMP191P-042Tests";
+			productReference = A0BF4A6E25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0BF4A7B25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0BF4A8325171BFE00FD083C /* Build configuration list for PBXNativeTarget "KASLeitan-COBSCCOMP191P-042UITests" */;
+			buildPhases = (
+				A0BF4A7825171BFE00FD083C /* Sources */,
+				A0BF4A7925171BFE00FD083C /* Frameworks */,
+				A0BF4A7A25171BFE00FD083C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0BF4A8225171BFE00FD083C /* PBXTargetDependency */,
+			);
+			name = "KASLeitan-COBSCCOMP191P-042UITests";
+			productName = "KASLeitan-COBSCCOMP191P-042UITests";
+			productReference = A0BF4A7C25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A0C2878D250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C287A2250EBDFB002342FB /* Build configuration list for PBXNativeTarget "KASLeitan-COBSCCOMP191P-042" */;
+			buildPhases = (
+				A9C048E16E01B9B4123FDEF3 /* [CP] Check Pods Manifest.lock */,
+				A0C2878A250EBDF4002342FB /* Sources */,
+				A0C2878B250EBDF4002342FB /* Frameworks */,
+				A0C2878C250EBDF4002342FB /* Resources */,
+				752DAC545E9B49A8E94E419E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KASLeitan-COBSCCOMP191P-042";
+			productName = "K A S Leitan-COBSCCOMP191P-042";
+			productReference = A0C2878E250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0C28786250EBDF4002342FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ayodhya Leitan";
+				TargetAttributes = {
+					A0BF4A6D25171BE600FD083C = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A0C2878D250EBDF4002342FB;
+					};
+					A0BF4A7B25171BFE00FD083C = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A0C2878D250EBDF4002342FB;
+					};
+					A0C2878D250EBDF4002342FB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = A0C28789250EBDF4002342FB /* Build configuration list for PBXProject "KASLeitan-COBSCCOMP191P-042" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0C28785250EBDF4002342FB;
+			productRefGroup = A0C2878F250EBDF4002342FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0C2878D250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042 */,
+				A0BF4A6D25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests */,
+				A0BF4A7B25171BFE00FD083C /* KASLeitan-COBSCCOMP191P-042UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0BF4A6C25171BE600FD083C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0BF4A7A25171BFE00FD083C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C2878C250EBDF4002342FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C2879E250EBDFB002342FB /* LaunchScreen.storyboard in Resources */,
+				A0FCE87B251474C5000962CF /* GoogleService-Info.plist in Resources */,
+				A0C2879B250EBDFB002342FB /* Assets.xcassets in Resources */,
+				A0572F9E250FB96300448D17 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		752DAC545E9B49A8E94E419E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KASLeitan-COBSCCOMP191P-042/Pods-KASLeitan-COBSCCOMP191P-042-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KASLeitan-COBSCCOMP191P-042/Pods-KASLeitan-COBSCCOMP191P-042-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KASLeitan-COBSCCOMP191P-042/Pods-KASLeitan-COBSCCOMP191P-042-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9C048E16E01B9B4123FDEF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KASLeitan-COBSCCOMP191P-042-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0BF4A6A25171BE600FD083C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BF4A7125171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift in Sources */,
+				A0AD26022517AF130025BFA0 /* LoginTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0BF4A7825171BFE00FD083C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BF4A7F25171BFE00FD083C /* KASLeitan_COBSCCOMP191P_042UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C2878A250EBDF4002342FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FCE8792513E5AE000962CF /* LocationHandler.swift in Sources */,
+				A0BF4A6125168E0300FD083C /* NotificationsVC.swift in Sources */,
+				A039241B25149B5300876273 /* ResultViewController.swift in Sources */,
+				A039241F25149BB600876273 /* SettingsViewController.swift in Sources */,
+				A0FCE8712513E49E000962CF /* MainViewController.swift in Sources */,
+				A0FCE8332513E05A000962CF /* UserAnnotation.swift in Sources */,
+				A039242125149BE800876273 /* ProfileViewController.swift in Sources */,
+				A0BF4A5A25168AF600FD083C /* SplashFourViewController.swift in Sources */,
+				A0BF4A6725170E4500FD083C /* Contact.swift in Sources */,
+				A039241525149ABE00876273 /* SurveyCVCell.swift in Sources */,
+				A039241325149A8E00876273 /* SurveyViewController.swift in Sources */,
+				A0BF4A6525170CDC00FD083C /* LocationInputUIView.swift in Sources */,
+				A0BF4A5C25168C0E00FD083C /* SplashTwoViewController.swift in Sources */,
+				A039240D2514985E00876273 /* RegisterViewController.swift in Sources */,
+				A039241D25149B8100876273 /* HomePageViewController.swift in Sources */,
+				A039241925149B2200876273 /* SafeActionsViewController.swift in Sources */,
+				A039241725149AF400876273 /* SplashOneViewController.swift in Sources */,
+				A0FCE8312513DF3C000962CF /* User.swift in Sources */,
+				A039242325149C2600876273 /* ContactViewController.swift in Sources */,
+				A0BF4A5E25168D9000FD083C /* CreateNotificVC.swift in Sources */,
+				A0FCE8772513E57B000962CF /* Extensions.swift in Sources */,
+				A03924092514979200876273 /* HomeViewController.swift in Sources */,
+				A039240F25149A2F00876273 /* MainTabBarController.swift in Sources */,
+				A0BF4A6925170E6600FD083C /* ContactAPI.swift in Sources */,
+				A0BF4A6325168E6700FD083C /* FullMapViewController.swift in Sources */,
+				A0FCE86F2513E47A000962CF /* CreateViewController.swift in Sources */,
+				A0FCE8352513E0A5000962CF /* AuthUIBtn.swift in Sources */,
+				A0C28792250EBDF4002342FB /* AppDelegate.swift in Sources */,
+				A0FCE8732513E4E8000962CF /* service.swift in Sources */,
+				A039240B2514980800876273 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0BF4A7425171BE600FD083C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0C2878D250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042 */;
+			targetProxy = A0BF4A7325171BE600FD083C /* PBXContainerItemProxy */;
+		};
+		A0BF4A8225171BFE00FD083C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0C2878D250EBDF4002342FB /* KASLeitan-COBSCCOMP191P-042 */;
+			targetProxy = A0BF4A8125171BFE00FD083C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0C2879C250EBDFB002342FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0C2879D250EBDFB002342FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0BF4A7525171BE600FD083C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4F6HHZG3;
+				INFOPLIST_FILE = "KASLeitan-COBSCCOMP191P-042Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Assignment.KASLeitan-COBSCCOMP191P-042Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KASLeitan-COBSCCOMP191P-042.app/KASLeitan-COBSCCOMP191P-042";
+			};
+			name = Debug;
+		};
+		A0BF4A7625171BE600FD083C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4F6HHZG3;
+				INFOPLIST_FILE = "KASLeitan-COBSCCOMP191P-042Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Assignment.KASLeitan-COBSCCOMP191P-042Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KASLeitan-COBSCCOMP191P-042.app/KASLeitan-COBSCCOMP191P-042";
+			};
+			name = Release;
+		};
+		A0BF4A8425171BFE00FD083C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4F6HHZG3;
+				INFOPLIST_FILE = "KASLeitan-COBSCCOMP191P-042UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Assignment.KASLeitan-COBSCCOMP191P-042UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KASLeitan-COBSCCOMP191P-042";
+			};
+			name = Debug;
+		};
+		A0BF4A8525171BFE00FD083C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4F6HHZG3;
+				INFOPLIST_FILE = "KASLeitan-COBSCCOMP191P-042UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Assignment.KASLeitan-COBSCCOMP191P-042UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KASLeitan-COBSCCOMP191P-042";
+			};
+			name = Release;
+		};
+		A0C287A0250EBDFB002342FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0C287A1250EBDFB002342FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0C287A3250EBDFB002342FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253AFDD84C2A0FEBD31F8B14 /* Pods-KASLeitan-COBSCCOMP191P-042.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4F6HHZG3;
+				INFOPLIST_FILE = "$(SRCROOT)/KASLeitan-COBSCCOMP191P-042/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Assignment.K-A-S-Leitan-COBSCCOMP191P-042";
+				PRODUCT_NAME = "KASLeitan-COBSCCOMP191P-042";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0C287A4250EBDFB002342FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7EA4F75CF6A5D69C763A86 /* Pods-KASLeitan-COBSCCOMP191P-042.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4F6HHZG3;
+				INFOPLIST_FILE = "$(SRCROOT)/KASLeitan-COBSCCOMP191P-042/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Assignment.K-A-S-Leitan-COBSCCOMP191P-042";
+				PRODUCT_NAME = "KASLeitan-COBSCCOMP191P-042";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0BF4A7725171BE600FD083C /* Build configuration list for PBXNativeTarget "KASLeitan-COBSCCOMP191P-042Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BF4A7525171BE600FD083C /* Debug */,
+				A0BF4A7625171BE600FD083C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0BF4A8325171BFE00FD083C /* Build configuration list for PBXNativeTarget "KASLeitan-COBSCCOMP191P-042UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0BF4A8425171BFE00FD083C /* Debug */,
+				A0BF4A8525171BFE00FD083C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0C28789250EBDF4002342FB /* Build configuration list for PBXProject "KASLeitan-COBSCCOMP191P-042" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C287A0250EBDFB002342FB /* Debug */,
+				A0C287A1250EBDFB002342FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0C287A2250EBDFB002342FB /* Build configuration list for PBXNativeTarget "KASLeitan-COBSCCOMP191P-042" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C287A3250EBDFB002342FB /* Debug */,
+				A0C287A4250EBDFB002342FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0C28786250EBDF4002342FB /* Project object */;
+}
