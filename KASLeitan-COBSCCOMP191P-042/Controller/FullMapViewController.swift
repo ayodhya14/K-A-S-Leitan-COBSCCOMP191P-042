@@ -33,7 +33,7 @@ class FullMapViewController: UIViewController {
         backBtn.centerY(inView: uv)
         
         let titleLbl = UILabel()
-        titleLbl.text = "Danger Zones"
+        titleLbl.text = "Danger Areas"
         titleLbl.font = UIFont(name: "Helvetica", size: 26)
         titleLbl.textColor = .black
         titleLbl.adjustsFontSizeToFitWidth = true

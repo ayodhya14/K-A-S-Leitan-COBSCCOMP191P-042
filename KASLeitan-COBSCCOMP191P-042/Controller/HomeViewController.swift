@@ -11,7 +11,6 @@ class HomeViewController: UIViewController {
 // MARK: - Properties
     
     private let mapView = MKMapView()
-    private let locationInputUIView = LocationInputUIView()
     private let locationManager = LocationHandler.shared.locationManager
     private var route: MKRoute?
     var safeArea: UILayoutGuide!
@@ -36,14 +35,14 @@ class HomeViewController: UIViewController {
         
         let title = UILabel()
         title.text = "All you need is"
-        title.font = UIFont(name: "Avenir-Medium", size: 26)
+        title.font = UIFont(name: "Helvetica", size: 20)
         title.textColor = .black
         tile.addSubview(title)
-        title.anchor(top: avatar.topAnchor, left: avatar.rightAnchor, right: tile.rightAnchor, paddingLeft: 30, paddingRight: 16)
+        title.anchor(top: avatar.topAnchor, left: avatar.rightAnchor, right: tile.rightAnchor, paddingTop: 10, paddingLeft: 30, paddingRight: 16)
         
         let subTitle = UILabel()
         subTitle.text = "stay at home"
-        subTitle.font = UIFont(name: "Avenir-Black", size: 30)
+        subTitle.font = UIFont(name: "Avenir-Black", size: 24)
         subTitle.textColor = .black
         tile.addSubview(subTitle)
         subTitle.anchor(top: title.bottomAnchor, left: avatar.rightAnchor, right: tile.rightAnchor, paddingLeft: 30, paddingRight: 16)
@@ -94,7 +93,7 @@ class HomeViewController: UIViewController {
         
         let description = UILabel()
         description.text = "Get quick update about lecture schedule stay tune with LMS"
-        description.font = UIFont(name: "Avenir-Medium", size: 12)
+        description.font = UIFont(name: "Helvetica", size: 12)
         description.textColor = .darkGray
         description.numberOfLines = 2
         tile.addSubview(description)
@@ -117,13 +116,14 @@ class HomeViewController: UIViewController {
         let moreBtn = UIButton()
         moreBtn.setTitle("See More", for: .normal)
         moreBtn.setTitleColor(.systemBlue, for: .normal)
-        moreBtn.titleLabel?.font = UIFont(name: "Avenir-Medium", size: 14)
+        moreBtn.titleLabel?.font = UIFont(name: "Helvetica", size: 14)
         tile.addSubview(moreBtn)
         moreBtn.anchor(top: tile.topAnchor, right: tile.rightAnchor, paddingTop: 14, paddingRight: 16)
+        moreBtn.addTarget(self, action: #selector(showFullMap), for: .touchUpInside)
         
         let timeAgo = UILabel()
         timeAgo.text = "1 minute ago"
-        timeAgo.font = UIFont(name: "Avenir-Medium", size: 11)
+        timeAgo.font = UIFont(name: "Helvetica", size: 11)
         timeAgo.textColor = .darkGray
         tile.addSubview(timeAgo)
         timeAgo.anchor(top: title.bottomAnchor, left: tile.leftAnchor, paddingLeft: 16)
@@ -157,7 +157,7 @@ class HomeViewController: UIViewController {
 
         let infectedCount = UILabel()
         infectedCount.text = "3"
-        infectedCount.font = UIFont(name: "Avenir-Medium", size: 48)
+        infectedCount.font = UIFont(name: "Helvetica", size: 48)
         infectedCount.textColor = .black
         infectedUI.addSubview(infectedCount)
         infectedCount.anchor(top: yellowDot.bottomAnchor, paddingTop: 12)
@@ -165,7 +165,7 @@ class HomeViewController: UIViewController {
 
         let deathsCount = UILabel()
         deathsCount.text = "0"
-        deathsCount.font = UIFont(name: "Avenir-Medium", size: 48)
+        deathsCount.font = UIFont(name: "Helvetica", size: 48)
         deathsCount.textColor = .black
         deathsUI.addSubview(deathsCount)
         deathsCount.anchor(top: redDot.bottomAnchor, paddingTop: 12)
@@ -173,7 +173,7 @@ class HomeViewController: UIViewController {
 
         let recoveredCount = UILabel()
         recoveredCount.text = "12"
-        recoveredCount.font = UIFont(name: "Avenir-Medium", size: 48)
+        recoveredCount.font = UIFont(name: "Helvetica", size: 48)
         recoveredCount.textColor = .black
         recoveredUI.addSubview(recoveredCount)
         recoveredCount.anchor(top: greenDot.bottomAnchor, paddingTop: 12)
@@ -181,7 +181,7 @@ class HomeViewController: UIViewController {
         
         let infectedLbl = UILabel()
         infectedLbl.text = "Infected"
-        infectedLbl.font = UIFont(name: "Avenir-Medium", size: 14)
+        infectedLbl.font = UIFont(name: "Helvetica", size: 14)
         infectedLbl.textColor = .darkGray
         infectedUI.addSubview(infectedLbl)
         infectedLbl.anchor(top: infectedCount.bottomAnchor)
@@ -189,7 +189,7 @@ class HomeViewController: UIViewController {
         
         let deathsLbl = UILabel()
         deathsLbl.text = "Deaths"
-        deathsLbl.font = UIFont(name: "Avenir-Medium", size: 14)
+        deathsLbl.font = UIFont(name: "Helvetica", size: 14)
         deathsLbl.textColor = .darkGray
         deathsUI.addSubview(deathsLbl)
         deathsLbl.anchor(top: deathsCount.bottomAnchor)
@@ -197,7 +197,7 @@ class HomeViewController: UIViewController {
         
         let recoveredLbl = UILabel()
         recoveredLbl.text = "Recovered"
-        recoveredLbl.font = UIFont(name: "Avenir-Medium", size: 14)
+        recoveredLbl.font = UIFont(name: "Helvetica", size: 14)
         recoveredLbl.textColor = .darkGray
         recoveredUI.addSubview(recoveredLbl)
         recoveredLbl.anchor(top: recoveredCount.bottomAnchor)
@@ -250,7 +250,7 @@ class HomeViewController: UIViewController {
                   self.present(nav, animated: true, completion: nil)
               }
           } else {
-             // faceID()
+              faceID()
               configure()
           }
       }
@@ -271,8 +271,6 @@ class HomeViewController: UIViewController {
     func configure() {
         configureUI()
         fetchUserData()
-        fetchOtherUsers()
-
     }
       
     // MARK: - Selectors
@@ -291,7 +289,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func showSafeActions() {
-        let vc = SplashOneViewController()
+        let vc = SafeOneViewController()
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -315,11 +313,6 @@ class HomeViewController: UIViewController {
         scrollView.addSubview(mapTile)
         mapTile.anchor(top: caseTile.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 270)
         confugireMapView()
-        //configureRideActionView()
-        //view.addSubview(actionButton)
-        //actionButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor,
-        //                    paddingTop: 16, paddingLeft: 20, width: 30, height: 30)
-        //configureTableView()
        
       }
     
@@ -346,33 +339,7 @@ class HomeViewController: UIViewController {
           }
       }
 
-    
-    func fetchOtherUsers() {
-        guard let location = locationManager?.location else { return }
-        Service.shared.fetchUsersLocation(location: location) { (driver) in
-            guard let coordinate = driver.location?.coordinate else { return }
-            let annotation = UserAnnotation(uid: driver.uid, coordinate: coordinate)
-            
-            var driverIsVisible: Bool {
-                
-                return self.mapView.annotations.contains { (annotation) -> Bool in
-                    guard let driverAnno = annotation as? UserAnnotation else { return false }
-                    
-                    if driverAnno.uid == driver.uid {
-                        driverAnno.updateAnnotationPosition(withCoordinate: coordinate)
-                        return true
-                    }
-                    
-                    return false
-                }
-            }
-            
-            if !driverIsVisible {
-                self.mapView.addAnnotation(annotation)
-            }
-        }
-    }
-    
+        
     // MARK:- FaceID
 
     func faceID(){
@@ -380,18 +347,18 @@ class HomeViewController: UIViewController {
           var error: NSError?
 
           if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-              let reason = "Identify yourself!"
+              let reason = "User Identified"
 
               context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
                   [weak self] success, authenticationError in
 
                   DispatchQueue.main.async {
                       if success {
-                          let ac = UIAlertController(title: "Authentication success", message: "Well Done", preferredStyle: .alert)
-                          ac.addAction(UIAlertAction(title: "Happy", style: .default))
+                          let ac = UIAlertController(title: "Authentication Success", message: "You are logged into the App", preferredStyle: .alert)
+                          ac.addAction(UIAlertAction(title: "Ok", style: .default))
                           self?.present(ac, animated: true)
                       } else {
-                          let ac = UIAlertController(title: "Authentication failed", message: "You could not be verified; please try again.", preferredStyle: .alert)
+                          let ac = UIAlertController(title: "Authentication failed", message: "You couldn't verified; Please Try Again.", preferredStyle: .alert)
                           ac.addAction(UIAlertAction(title: "OK", style: .default))
                           self?.signOut()
                         //  self?.present(ac, animated: true)

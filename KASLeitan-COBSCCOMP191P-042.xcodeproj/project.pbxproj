@@ -14,21 +14,18 @@
 		A039240F25149A2F00876273 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039240E25149A2F00876273 /* MainTabBarController.swift */; };
 		A039241325149A8E00876273 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241225149A8E00876273 /* SurveyViewController.swift */; };
 		A039241525149ABE00876273 /* SurveyCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241425149ABE00876273 /* SurveyCVCell.swift */; };
-		A039241725149AF400876273 /* SplashOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241625149AF400876273 /* SplashOneViewController.swift */; };
-		A039241925149B2200876273 /* SafeActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241825149B2200876273 /* SafeActionsViewController.swift */; };
+		A039241725149AF400876273 /* SafeOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241625149AF400876273 /* SafeOneViewController.swift */; };
 		A039241B25149B5300876273 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241A25149B5300876273 /* ResultViewController.swift */; };
-		A039241D25149B8100876273 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241C25149B8100876273 /* HomePageViewController.swift */; };
 		A039241F25149BB600876273 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039241E25149BB600876273 /* SettingsViewController.swift */; };
 		A039242125149BE800876273 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039242025149BE800876273 /* ProfileViewController.swift */; };
 		A039242325149C2600876273 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039242225149C2600876273 /* ContactViewController.swift */; };
 		A0572F9E250FB96300448D17 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0572F9D250FB96200448D17 /* Default-568h@2x.png */; };
 		A0AD26022517AF130025BFA0 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD26012517AF130025BFA0 /* LoginTest.swift */; };
-		A0BF4A5A25168AF600FD083C /* SplashFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5925168AF600FD083C /* SplashFourViewController.swift */; };
-		A0BF4A5C25168C0E00FD083C /* SplashTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5B25168C0E00FD083C /* SplashTwoViewController.swift */; };
+		A0BF4A5A25168AF600FD083C /* SafeThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5925168AF600FD083C /* SafeThreeViewController.swift */; };
+		A0BF4A5C25168C0E00FD083C /* SafeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5B25168C0E00FD083C /* SafeTwoViewController.swift */; };
 		A0BF4A5E25168D9000FD083C /* CreateNotificVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */; };
 		A0BF4A6125168E0300FD083C /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6025168E0300FD083C /* NotificationsVC.swift */; };
 		A0BF4A6325168E6700FD083C /* FullMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6225168E6700FD083C /* FullMapViewController.swift */; };
-		A0BF4A6525170CDC00FD083C /* LocationInputUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6425170CDC00FD083C /* LocationInputUIView.swift */; };
 		A0BF4A6725170E4500FD083C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6625170E4500FD083C /* Contact.swift */; };
 		A0BF4A6925170E6600FD083C /* ContactAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A6825170E6600FD083C /* ContactAPI.swift */; };
 		A0BF4A7125171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF4A7025171BE600FD083C /* KASLeitan_COBSCCOMP191P_042Tests.swift */; };
@@ -46,6 +43,31 @@
 		A0FCE8792513E5AE000962CF /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCE8782513E5AE000962CF /* LocationHandler.swift */; };
 		A0FCE87B251474C5000962CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0FCE87A251474C5000962CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		A0AD26032517C4A00025BFA0 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# metal\n";
+		};
+		A0AD26042517C4BA0025BFA0 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# metal\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		A0BF4A7325171BE600FD083C /* PBXContainerItemProxy */ = {
@@ -73,21 +95,18 @@
 		A039240E25149A2F00876273 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A039241225149A8E00876273 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		A039241425149ABE00876273 /* SurveyCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCVCell.swift; sourceTree = "<group>"; };
-		A039241625149AF400876273 /* SplashOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashOneViewController.swift; sourceTree = "<group>"; };
-		A039241825149B2200876273 /* SafeActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeActionsViewController.swift; sourceTree = "<group>"; };
+		A039241625149AF400876273 /* SafeOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeOneViewController.swift; sourceTree = "<group>"; };
 		A039241A25149B5300876273 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		A039241C25149B8100876273 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		A039241E25149BB600876273 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A039242025149BE800876273 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A039242225149C2600876273 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A0572F9D250FB96200448D17 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A0AD26012517AF130025BFA0 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
-		A0BF4A5925168AF600FD083C /* SplashFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFourViewController.swift; sourceTree = "<group>"; };
-		A0BF4A5B25168C0E00FD083C /* SplashTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTwoViewController.swift; sourceTree = "<group>"; };
+		A0BF4A5925168AF600FD083C /* SafeThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeThreeViewController.swift; sourceTree = "<group>"; };
+		A0BF4A5B25168C0E00FD083C /* SafeTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeTwoViewController.swift; sourceTree = "<group>"; };
 		A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificVC.swift; sourceTree = "<group>"; };
 		A0BF4A6025168E0300FD083C /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		A0BF4A6225168E6700FD083C /* FullMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMapViewController.swift; sourceTree = "<group>"; };
-		A0BF4A6425170CDC00FD083C /* LocationInputUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputUIView.swift; sourceTree = "<group>"; };
 		A0BF4A6625170E4500FD083C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		A0BF4A6825170E6600FD083C /* ContactAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAPI.swift; sourceTree = "<group>"; };
 		A0BF4A6E25171BE600FD083C /* KASLeitan-COBSCCOMP191P-042Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KASLeitan-COBSCCOMP191P-042Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,22 +241,20 @@
 				A039240C2514985E00876273 /* RegisterViewController.swift */,
 				A039240A2514980800876273 /* LoginViewController.swift */,
 				A03924082514979200876273 /* HomeViewController.swift */,
-				A0FCE86E2513E47A000962CF /* CreateViewController.swift */,
 				A039240E25149A2F00876273 /* MainTabBarController.swift */,
+				A039241625149AF400876273 /* SafeOneViewController.swift */,
+				A0BF4A5B25168C0E00FD083C /* SafeTwoViewController.swift */,
+				A0BF4A5925168AF600FD083C /* SafeThreeViewController.swift */,
+				A0BF4A6225168E6700FD083C /* FullMapViewController.swift */,
+				A0FCE86E2513E47A000962CF /* CreateViewController.swift */,
+				A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */,
+				A0BF4A6025168E0300FD083C /* NotificationsVC.swift */,
 				A039241225149A8E00876273 /* SurveyViewController.swift */,
 				A039241425149ABE00876273 /* SurveyCVCell.swift */,
 				A039241A25149B5300876273 /* ResultViewController.swift */,
-				A039241625149AF400876273 /* SplashOneViewController.swift */,
-				A039241825149B2200876273 /* SafeActionsViewController.swift */,
-				A039241C25149B8100876273 /* HomePageViewController.swift */,
 				A039241E25149BB600876273 /* SettingsViewController.swift */,
 				A039242025149BE800876273 /* ProfileViewController.swift */,
 				A039242225149C2600876273 /* ContactViewController.swift */,
-				A0BF4A5925168AF600FD083C /* SplashFourViewController.swift */,
-				A0BF4A5B25168C0E00FD083C /* SplashTwoViewController.swift */,
-				A0BF4A5D25168D9000FD083C /* CreateNotificVC.swift */,
-				A0BF4A6025168E0300FD083C /* NotificationsVC.swift */,
-				A0BF4A6225168E6700FD083C /* FullMapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				A0FCE8342513E0A5000962CF /* AuthUIBtn.swift */,
-				A0BF4A6425170CDC00FD083C /* LocationInputUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +307,7 @@
 				A0BF4A6C25171BE600FD083C /* Resources */,
 			);
 			buildRules = (
+				A0AD26042517C4BA0025BFA0 /* PBXBuildRule */,
 			);
 			dependencies = (
 				A0BF4A7425171BE600FD083C /* PBXTargetDependency */,
@@ -309,6 +326,7 @@
 				A0BF4A7A25171BFE00FD083C /* Resources */,
 			);
 			buildRules = (
+				A0AD26032517C4A00025BFA0 /* PBXBuildRule */,
 			);
 			dependencies = (
 				A0BF4A8225171BFE00FD083C /* PBXTargetDependency */,
@@ -479,16 +497,13 @@
 				A0FCE8712513E49E000962CF /* MainViewController.swift in Sources */,
 				A0FCE8332513E05A000962CF /* UserAnnotation.swift in Sources */,
 				A039242125149BE800876273 /* ProfileViewController.swift in Sources */,
-				A0BF4A5A25168AF600FD083C /* SplashFourViewController.swift in Sources */,
+				A0BF4A5A25168AF600FD083C /* SafeThreeViewController.swift in Sources */,
 				A0BF4A6725170E4500FD083C /* Contact.swift in Sources */,
 				A039241525149ABE00876273 /* SurveyCVCell.swift in Sources */,
 				A039241325149A8E00876273 /* SurveyViewController.swift in Sources */,
-				A0BF4A6525170CDC00FD083C /* LocationInputUIView.swift in Sources */,
-				A0BF4A5C25168C0E00FD083C /* SplashTwoViewController.swift in Sources */,
+				A0BF4A5C25168C0E00FD083C /* SafeTwoViewController.swift in Sources */,
 				A039240D2514985E00876273 /* RegisterViewController.swift in Sources */,
-				A039241D25149B8100876273 /* HomePageViewController.swift in Sources */,
-				A039241925149B2200876273 /* SafeActionsViewController.swift in Sources */,
-				A039241725149AF400876273 /* SplashOneViewController.swift in Sources */,
+				A039241725149AF400876273 /* SafeOneViewController.swift in Sources */,
 				A0FCE8312513DF3C000962CF /* User.swift in Sources */,
 				A039242325149C2600876273 /* ContactViewController.swift in Sources */,
 				A0BF4A5E25168D9000FD083C /* CreateNotificVC.swift in Sources */,

@@ -11,14 +11,6 @@ class CreateNotificVC: UIViewController {
         let uv = UIView()
         uv.backgroundColor = .systemGray6
         
-//        let backBtn = UIButton()
-//        let boldConfig = UIImage.SymbolConfiguration(pointSize: .zero, weight: .bold, scale: .large)
-//        backBtn.setImage(UIImage(systemName: "chevron.left", withConfiguration: boldConfig), for: .normal)
-//        backBtn.tintColor = .black
-//        backBtn.addTarget(self, action: #selector(handleGoBack), for: .touchUpInside)
-//        uv.addSubview(backBtn)
-//        backBtn.anchor(left: uv.leftAnchor, paddingLeft: 16, width: 38, height: 38)
-//        backBtn.centerY(inView: uv)
         
         let backBtn = UIButton()
               let boldConfig = UIImage.SymbolConfiguration(pointSize: .zero, weight: .bold, scale: .large)
@@ -77,7 +69,7 @@ class CreateNotificVC: UIViewController {
         let btn = UIButton()
         btn.setTitle("CREATE", for: .normal)
         btn.setTitleColor(.white, for: .normal)
-        btn.backgroundColor = .mainBlueTint
+        btn.backgroundColor = UIColor.appNameColor
         btn.layer.cornerRadius = 5.0
         btn.layer.masksToBounds = true
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
@@ -87,15 +79,7 @@ class CreateNotificVC: UIViewController {
         return btn
     }()
     
-    //    private let createBtn: AuthUIBtn = {
-    //        let button = AuthUIBtn(type: .system)
-    //        button.setTitle("Log In", for: .normal)
-    //         button.setTitleColor(.black, for: .normal)
-    //        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-    //        button.addTarget(self, action: #selector(handleCreate), for: .touchUpInside)
-    //        return button
-    //    }()
-    
+
     private lazy var formTile: UIView = {
         let tile = UIView()
         tile.backgroundColor = .white
@@ -125,6 +109,7 @@ class CreateNotificVC: UIViewController {
     @objc func handleGoBack() {
         self.navigationController?.popToRootViewController(animated: true)
     }
+
     
     @objc func handleCreate() {
         guard let title = titleTF.text else { return }
@@ -178,7 +163,7 @@ class CreateNotificVC: UIViewController {
         REF_NOTIFICATIONS.childByAutoId().setValue(values) { (error, ref) in
             
             if let error = error {
-                print("Faild to create notification \(error)")
+                print("Failed to create notification \(error)")
                 return
             }
             

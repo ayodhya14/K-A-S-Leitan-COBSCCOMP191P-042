@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
         let imageview = UIImageView()
         //        imageview.frame = CGRect(x: 0, y: 0, width: 10, height: 25)
         imageview.image = UIImage(named:"covid19-logo")
-//        imageview.makeRounded()
+        //        imageview.makeRounded()
         //        imageview.layer.masksToBounds = true
         
         // view.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -86,26 +86,26 @@ class LoginViewController: UIViewController {
     @objc func handleSignIn() {
         guard let email = emailTextFiled.text else { return }
         guard let password = passwordTextFiled.text else { return }
-
-                if(email.count==0){
+        
+        if(email.count==0){
             let ac = UIAlertController(title: "Log In", message: "Please enter email", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Ok", style: .cancel))
             self.present(ac, animated: true)
             return;
         }
-
-                if(!email.contains("@") || !email.contains(".")){
+        
+        if(!email.contains("@") || !email.contains(".")){
             let ac = UIAlertController(title: "Log In", message: "Please enter email correctly", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Ok", style: .cancel))
             self.present(ac, animated: true)
             return;
         }
-
-                if(password.count==0){
-                let ac = UIAlertController(title: "Log In", message: "Please enter password", preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "Ok", style: .cancel))
-                self.present(ac, animated: true)
-                return;
+        
+        if(password.count==0){
+            let ac = UIAlertController(title: "Log In", message: "Please enter password", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .cancel))
+            self.present(ac, animated: true)
+            return;
         }
         
         if(password.count<6){
@@ -116,12 +116,12 @@ class LoginViewController: UIViewController {
         }
         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-              if let error = error {
-            let ac = UIAlertController(title: "Log In", message: "\(error.localizedDescription)", preferredStyle: .alert)
+            if let error = error {
+                let ac = UIAlertController(title: "Log In", message: "\(error.localizedDescription)", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Ok", style: .cancel))
-                   self.present(ac, animated: true)
-                   print("DEBUG: Faild to log user with error \(error.localizedDescription)")
-                   return
+                self.present(ac, animated: true)
+                print("DEBUG: Failed to log user with error \(error.localizedDescription)")
+                return
             }
             
             let keyWindow = UIApplication.shared.connectedScenes

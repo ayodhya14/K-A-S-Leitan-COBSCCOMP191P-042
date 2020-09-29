@@ -118,8 +118,9 @@ class CreateViewController: UIViewController {
         
         let tempBtn = UIButton()
         tempBtn.setTitle("UPDATE", for: .normal)
-        tempBtn.setTitleColor(.black, for: .normal)
-        tempBtn.layer.borderColor = UIColor.black.cgColor
+        tempBtn.setTitleColor(.white, for: .normal)
+//        tempBtn.layer.borderColor = UIColor.black.cgColor
+        tempBtn.backgroundColor = UIColor.appNameColor
         tempBtn.layer.borderWidth = 0.5
         tempBtn.layer.cornerRadius = 5.0
         tempBtn.layer.masksToBounds = true
@@ -127,7 +128,7 @@ class CreateViewController: UIViewController {
         tempBtn.addTextSpacing(2)
         tempBtn.addTarget(self, action: #selector(handleTempUpdate), for: .touchUpInside)
         tile.addSubview(tempBtn)
-        tempBtn.anchor(top: tempTF.bottomAnchor, paddingTop: 35, width: 120, height: 40)
+        tempBtn.anchor(top: tempTF.bottomAnchor, paddingTop: 35, width: 200, height: 55)
         tempBtn.centerX(inView: tile)
         
         return tile
